@@ -1,0 +1,16 @@
+{
+  "name": "@birdhouse/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "tsconfig.library.json",
+    "tsconfig.app.json"
+  ],
+  "scripts": {
+    "build": "echo 'No build step for @birdhouse/config'",
+    "typecheck": "echo 'No typecheck step for @birdhouse/config'",
+    "lint": "echo 'No lint configured for @birdhouse/config'",
+    "test": "echo 'No tests configured for @birdhouse/config'"
+  }
+}

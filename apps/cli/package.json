@@ -1,0 +1,22 @@
+{
+  "name": "@birdhouse/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "birdhouse": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "echo 'No lint configured for @birdhouse/cli'",
+    "test": "echo 'No tests configured for @birdhouse/cli'",
+    "start": "bun src/index.ts"
+  },
+  "dependencies": {
+    "@birdhouse/client": "workspace:*",
+    "@birdhouse/protocol": "workspace:*",
+    "commander": "^14.0.1"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@birdhouse/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "dev": "EXPO_NO_WATCHMAN=1 expo start",
+    "ios": "EXPO_NO_WATCHMAN=1 expo run:ios",
+    "android": "EXPO_NO_WATCHMAN=1 expo run:android",
+    "testflight:build": "eas build --platform ios --profile production",
+    "testflight:submit": "eas submit --platform ios --profile production",
+    "build": "tsc --noEmit -p tsconfig.json",
+    "export": "EXPO_NO_WATCHMAN=1 expo export",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "echo 'No lint configured for @birdhouse/mobile'",
+    "test": "echo 'No tests configured for @birdhouse/mobile'"
+  },
+  "dependencies": {
+    "@birdhouse/client": "workspace:*",
+    "@birdhouse/protocol": "workspace:*",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "expo": "^54.0.0",
+    "expo-device": "~8.0.10",
+    "expo-document-picker": "~14.0.8",
+    "expo-image-picker": "~17.0.10",
+    "expo-notifications": "~0.32.16",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "babel-preset-expo": "~54.0.10",
+    "typescript": "^5.9.2"
+  }
+}

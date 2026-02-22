@@ -1,0 +1,19 @@
+node_modules
+.bun
+.turbo
+.env
+.env.local
+.DS_Store
+
+# Build artifacts
+coverage
+dist
+build
+*.tsbuildinfo
+
+# Expo
+.expo
+.expo-shared
+apps/mobile/.expo
+
+# Bun

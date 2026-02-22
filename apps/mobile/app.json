@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Birdhouse",
+    "slug": "birdhouse",
+    "scheme": "birdhouse",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.birdhouse.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.birdhouse.app"
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "33bae22f-5c93-4831-a6b6-21fa1a4ab8e0"
+      }
+    },
+    "owner": "vochsel"
+  }
+}

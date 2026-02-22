@@ -1,0 +1,23 @@
+{
+  "name": "birdhouse",
+  "private": true,
+  "packageManager": "bun@1.3.5",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "birdhouse-server": "bun run --filter @birdhouse/agent-server dev --"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "turbo": "^2.5.6",
+    "typescript": "^5.9.2"
+  }
+}
